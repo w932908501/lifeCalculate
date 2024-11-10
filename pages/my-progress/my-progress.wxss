@@ -1,0 +1,60 @@
+.container {
+  padding: 20px;
+  background-color: #f7f7f7;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.info-text {
+  font-size: 12px;
+  line-height: 1.4;
+  margin-bottom: 15px;
+  color: #999;
+  text-align: justify;
+}
+
+.progress-section {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 40px;
+}
+
+.birth-year-btn {
+  margin-bottom: 30px;
+  border-radius: 25px !important;
+  background: #07c160 !important;
+  color: white !important;
+  font-size: 14px !important;
+  padding: 8px 24px !important;
+  border: none !important;
+  width: 80% !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+}
+
+.progress-container {
+  margin-top: 20px;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.progress-text {
+  margin-top: 10px;
+  text-align: center;
+  color: #666;
+  font-size: 14px;
+}
+
+.motto-text {
+  margin-top: 8px;
+  text-align: center;
+  color: #07c160;
+  font-size: 13px;
+} 

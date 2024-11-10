@@ -1,0 +1,26 @@
+.picker-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+}
+
+.picker-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.cancel, .confirm {
+  padding: 5px 15px;
+}
+
+.cancel {
+  color: #888;
+}
+
+.confirm {
+  color: #07c160;
+} 

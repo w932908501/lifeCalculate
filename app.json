@@ -1,0 +1,30 @@
+{
+  "pages": [
+    "pages/my-progress/my-progress",
+    "pages/other-progress/other-progress",
+    "pages/year-picker/year-picker"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "人生进度条",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#f7f7f7"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/my-progress/my-progress",
+        "text": "我的",
+        "iconPath": "assets/my.png",
+        "selectedIconPath": "assets/my-active.png"
+      },
+      {
+        "pagePath": "pages/other-progress/other-progress",
+        "text": "ta的",
+        "iconPath": "assets/other.png",
+        "selectedIconPath": "assets/other-active.png"
+      }
+    ]
+  }
+}

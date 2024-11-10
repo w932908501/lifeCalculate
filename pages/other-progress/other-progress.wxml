@@ -1,0 +1,36 @@
+<view class="container">
+  <view class="info-text">
+    国家卫生健康委8月29日发布的《2023年我国卫生健康事业发展统计公报》显示，我国人均预期寿命达到78.6岁。
+  </view>
+  
+  <view class="progress-section">
+    <input 
+      class="name-input" 
+      placeholder="输入ta的称呼（选填）" 
+      value="{{taName}}"
+      bindinput="handleNameInput"
+    />
+    <picker 
+      bindchange="bindYearChange" 
+      value="{{yearIndex}}" 
+      range="{{yearArray}}"
+    >
+      <button class="birth-year-btn">
+        {{birthYear ? '已选择出生年份：' + birthYear : '选择出生年份'}}
+      </button>
+    </picker>
+    
+    <view class="progress-container" wx:if="{{birthYear}}">
+      <progress 
+        percent="{{progressPercent}}" 
+        stroke-width="12" 
+        show-info
+        border-radius="10"
+      />
+      <view class="progress-text">
+        {{taName ? taName : 'ta'}}已度过 {{currentAge}} 年，占预期寿命的 {{progressPercentText}}%
+      </view>  
+    </view>
+    <view class="motto-text">珍惜和{{taName ? taName : 'ta'}}在一起的每一刻，珍惜当下！</view>
+  </view>
+</view> 

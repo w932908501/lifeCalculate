@@ -1,0 +1,81 @@
+/* 与 my-progress.wxss 完全相同的代码 */
+.container {
+  padding: 20px;
+  background-color: #f7f7f7;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.info-text {
+  font-size: 12px;
+  line-height: 1.4;
+  margin-bottom: 15px;
+  color: #999;
+  text-align: justify;
+}
+
+.progress-section {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 40px;
+}
+
+/* 定义一个通用的宽度变量 */
+.name-input, .birth-year-btn {
+  width: 80% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  border-radius: 25px !important;
+  font-size: min(4vw, 16px) !important;
+  box-sizing: border-box !important;
+}
+
+.name-input {
+  margin-bottom: 15px;
+  background: white;
+  border: 1px solid #07c160;
+  color: #333;
+  text-align: center;
+  height: 44px !important;
+  line-height: 44px !important;
+  padding: 0 24px !important;
+}
+
+.birth-year-btn {
+  margin-bottom: 30px;
+  background: #07c160 !important;
+  color: white !important;
+  border: none !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  height: 44px !important;
+  line-height: 44px !important;
+  padding: 0 24px !important;
+}
+
+.progress-container {
+  margin-top: 20px;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.progress-text {
+  margin-top: 10px;
+  text-align: center;
+  color: #666;
+  font-size: 14px;
+}
+
+.motto-text {
+  margin-top: 8px;
+  text-align: center;
+  color: #07c160;
+  font-size: 13px;
+} 
