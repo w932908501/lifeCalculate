@@ -21,16 +21,27 @@
     </picker>
     
     <view class="progress-container" wx:if="{{birthYear}}">
-      <progress 
-        percent="{{progressPercent}}" 
-        stroke-width="12" 
-        show-info
-        border-radius="10"
-      />
-      <view class="progress-text">
-        {{taName ? taName : 'ta'}}已度过 {{currentAge}} 年，占预期寿命的 {{progressPercentText}}%
-      </view>  
+      <block wx:if="{{currentAge <= 78}}">
+        <progress 
+          percent="{{progressPercent}}" 
+          stroke-width="12" 
+          show-info
+          border-radius="10"
+        />
+        <view class="progress-text">
+          {{taName ? taName : 'ta'}}已度过 {{currentAge}} 年，占人均预期寿命的 {{progressPercentText}}%
+        </view>
+      </block>
+      <block wx:else>
+        <view class="progress-text">
+          {{taName ? taName : 'ta'}}已经超出了人均预期寿命
+        </view>
+      </block>
+      <view class="motto-text">珍惜和{{taName ? taName : 'ta'}}在一起的每一刻，珍惜当下！</view>
+      
+      <button class="share-btn" open-type="share">分享给好友</button>
     </view>
-    <view class="motto-text">珍惜和{{taName ? taName : 'ta'}}在一起的每一刻，珍惜当下！</view>
   </view>
+  
+  <canvas type="2d" id="shareCanvas" class="share-canvas"></canvas>
 </view> 

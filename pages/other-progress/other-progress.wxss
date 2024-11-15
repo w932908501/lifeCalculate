@@ -8,7 +8,7 @@
 }
 
 .info-text {
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.4;
   margin-bottom: 15px;
   color: #999;
@@ -49,6 +49,7 @@
   margin-bottom: 30px;
   background: #07c160 !important;
   color: white !important;
+  font-size: min(8vw, 18px) !important;
   border: none !important;
   white-space: nowrap !important;
   overflow: hidden !important;
@@ -70,12 +71,34 @@
   margin-top: 10px;
   text-align: center;
   color: #666;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .motto-text {
   margin-top: 8px;
   text-align: center;
   color: #07c160;
-  font-size: 13px;
+  font-size: 16px;
+}
+
+.motto-text {
+  text-align: center;
+}
+
+.share-canvas {
+  position: fixed;
+  left: -9999px;
+  width: 500px;
+  height: 400px;
+}
+
+.share-btn {
+  margin-top: 20px;
+  width: 60% !important;
+  background: #07c160 !important;
+  color: white !important;
+  border-radius: 25px !important;
+  font-size: 18px !important;
+  padding: 2px 0 !important;
+  border: none !important;
 } 

@@ -3,5 +3,6 @@
     "projectname": "wxprogram",
     "setting": {
         "compileHotReLoad": true
-    }
+    },
+    "libVersion": "development"
 }
